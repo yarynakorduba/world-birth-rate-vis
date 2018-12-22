@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/world-birth-rate-vis/static/js/runtime~main.491666ce.js"
   },
   {
-    "revision": "fd903ff670349da84df6",
-    "url": "/world-birth-rate-vis/static/js/main.fd903ff6.chunk.js"
+    "revision": "1237fbfde6ea5b6d12f1",
+    "url": "/world-birth-rate-vis/static/js/main.1237fbfd.chunk.js"
   },
   {
     "revision": "6d107bc6cb73026b52dd",
     "url": "/world-birth-rate-vis/static/js/1.6d107bc6.chunk.js"
   },
   {
-    "revision": "fd903ff670349da84df6",
-    "url": "/world-birth-rate-vis/static/css/main.30fe3ba6.chunk.css"
+    "revision": "1237fbfde6ea5b6d12f1",
+    "url": "/world-birth-rate-vis/static/css/main.2c923d77.chunk.css"
   },
   {
-    "revision": "2ecffb7c72e25d7e5a27de54c13e3142",
+    "revision": "c3877032af4a997000b8db9aed907488",
     "url": "/world-birth-rate-vis/index.html"
   }
 ];
