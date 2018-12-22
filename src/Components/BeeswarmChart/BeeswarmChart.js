@@ -45,7 +45,7 @@ const BeeswarmChart = ({ data, beeswarmData, margin, parentWidth: width, parentH
 
 const enhance = compose(
   defaultProps({
-    margin: { top: 200, right: 120, bottom: 200, left: 120 }
+    margin: { top: 100, right: 120, bottom: 200, left: 120 }
   }),
   withParentSize,
   withState("data", "setData"),
