@@ -9,6 +9,7 @@ import Legend from "../Legend"
 
 const BeeswarmChart = ({ data, beeswarmData, margin, parentWidth: width, parentHeight: height }) => (
   <div className={"BeeswarmChart"}>
+      <h2 className="BeeswarmChart__header">Birth rate per 1000 persons for 2013</h2>
     <XYChart
       ariaLabel="Beeswarm chart showind the birth rate for different countries for the year 2013"
       width={width - margin.right - margin.left}
@@ -36,7 +37,7 @@ const BeeswarmChart = ({ data, beeswarmData, margin, parentWidth: width, parentH
         showCircle={true}
         circleStroke="black"
       />
-      <XAxis data={beeswarmData} label="Birth rate per 1000 person for 2013" numTicks={20} />
+      <XAxis data={beeswarmData} label="Birth rate" numTicks={20} />
     </XYChart>
     <Legend />
   </div>
