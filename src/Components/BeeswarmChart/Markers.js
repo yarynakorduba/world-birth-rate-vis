@@ -1,11 +1,11 @@
 import { Marker } from "@vx/vx"
 import React from "react"
 
-const Markers = ({ xScale, minBirthItem, maxBirthItem }) => (
+const Markers = ({ xScale, minBirthItem, maxBirthItem, yMax }) => (
   <>
     <Marker
       from={{ x: xScale(minBirthItem.birth), y: 0 }}
-      to={{ x: xScale(minBirthItem.birth), y: 150 }}
+      to={{ x: xScale(minBirthItem.birth), y: yMax }}
       stroke={"black"}
       strokeWidth={1}
       label={`${minBirthItem.country} ${minBirthItem.birth}`}
@@ -15,7 +15,7 @@ const Markers = ({ xScale, minBirthItem, maxBirthItem }) => (
     />
     <Marker
       from={{ x: xScale(maxBirthItem.birth), y: 0 }}
-      to={{ x: xScale(maxBirthItem.birth), y: 150 }}
+      to={{ x: xScale(maxBirthItem.birth), y: yMax }}
       stroke={"black"}
       strokeWidth={1}
       label={`${maxBirthItem.country} ${maxBirthItem.birth}`}

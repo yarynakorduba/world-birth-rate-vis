@@ -35,7 +35,12 @@ const BeeswarmChart = ({
         </div>
       )}
     >
-      <Markers xScale={xScale} minBirthItem={minBirthItem} maxBirthItem={maxBirthItem} />
+      <Markers
+        xScale={xScale}
+        minBirthItem={minBirthItem}
+        maxBirthItem={maxBirthItem}
+        yMax={height - margin.top - margin.bottom}
+      />
       <CirclePackSeries data={beeswarmData} fill={dataItem => colorScale(dataItem.region)} size={dataItem => 5} />
       <CrossHair
         data={beeswarmData}
