@@ -2,11 +2,14 @@
   "name": "datavis_project",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://yarynakorduba.github.io/world-birth-rate-vis",
   "dependencies": {
     "@data-ui/xy-chart": "0.0.74",
+    "@vx/legend": "0.0.182",
     "@vx/vx": "0.0.182",
     "d3": "^5.7.0",
     "d3-force": "^2.0.0",
+    "gh-pages": "^2.0.1",
     "node-sass": "^4.11.0",
     "ramda": "^0.26.1",
     "react": "^16.6.3",
@@ -16,13 +19,16 @@
     "reduce-merge-reducers": "^0.2.3",
     "redux": "^4.0.1",
     "redux-force": "^0.1.10",
-    "sass-loader": "^7.1.0"
+    "sass-loader": "^7.1.0",
+    "save-dev": "^2.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"

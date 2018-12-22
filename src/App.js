@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import Layout from "./Components/Layout"
+import Layout from "./Components/BeeswarmChart"
 
 import "./App.scss"
 
