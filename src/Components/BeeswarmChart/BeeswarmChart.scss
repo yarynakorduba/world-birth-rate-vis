@@ -3,5 +3,14 @@
     width: 100%;
     padding: 50px 0 0 120px;
     margin: 0;
+    display: flex;
+  }
+
+  &__button {
+    background: rgba(65, 80, 205, 0.38);
+    border: none;
+    border-radius: 24px;
+    padding: 5px;
+    margin-left: 10px;
   }
 }

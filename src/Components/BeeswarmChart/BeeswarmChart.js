@@ -1,8 +1,8 @@
 import React from "react"
 import { withParentSize } from "@vx/vx"
-import { csv, extent, scaleLinear, min, max, scan } from "d3"
+import { csv, scaleLinear, scan } from "d3"
 import { CirclePackSeries, XYChart, XAxis, CrossHair } from "@data-ui/xy-chart"
-import { compose, defaultProps, withProps, branch, renderComponent, withState } from "recompose"
+import { compose, defaultProps, withProps, branch, renderComponent, withState, withStateHandlers } from "recompose"
 import { colorScale } from "../../helpers/scales"
 import "./BeeswarmChart.scss"
 import Legend from "../Legend"
@@ -15,31 +15,38 @@ const BeeswarmChart = ({
   parentWidth: width,
   parentHeight: height,
   xScale,
-  maxBirthItem,
-  minBirthItem
+  maxItem,
+  minItem,
+  toggleHandler,
+  buttonText
 }) => (
   <div className={"BeeswarmChart"}>
-    <h2 className="BeeswarmChart__header">Birth rate per 1000 persons for 2013</h2>
-    {console.log(maxBirthItem, minBirthItem)}
+    <h2 className="BeeswarmChart__header">
+      Birth rate per 1000 persons for 2013 <button className={"BeeswarmChart__button"} onClick={toggleHandler}>{buttonText}</button>
+    </h2>
     <XYChart
-      ariaLabel="Beeswarm chart showind the birth rate for different countries for the year 2013"
+      ariaLabel="Beeswarm chart showing the birth rate for different countries for the year 2013"
       width={width}
       height={height}
-      xScale={{ type: "linear", domain: [0, Math.ceil(max(data, d => d.birth))] }}
-      yScale={{ type: "linear" }}
       margin={margin}
+      xScale={{
+        type: "linear",
+        domain: [0, Math.ceil(buttonText === "show death rate" ? maxItem.birth : maxItem.death)]
+      }}
+      yScale={{ type: "linear" }}
       renderTooltip={({ event, data, datum }) => (
         <div>
           <div>{datum.country}</div>
-          <div>{datum.birth}</div>
+          <div>{buttonText === "show birth rate" ? datum.death : datum.birth}</div>
         </div>
       )}
     >
       <Markers
+        currentInfo={buttonText}
         xScale={xScale}
-        minBirthItem={minBirthItem}
-        maxBirthItem={maxBirthItem}
-        yMax={height - margin.top - margin.bottom}
+        minItem={minItem}
+        maxItem={maxItem}
+        yMax={height - margin.bottom - margin.top}
       />
       <CirclePackSeries data={beeswarmData} fill={dataItem => colorScale(dataItem.region)} size={dataItem => 5} />
       <CrossHair
@@ -68,9 +75,10 @@ const enhance = compose(
   withState("data", "setData"),
   withProps(async ({ data, setData }) => {
     if (!data) {
-      const data = await csv("birth_rate.csv", ({ country, birth, code, region, id }) => ({
+      const data = await csv("birth_rate.csv", ({ country, birth, death, code, region, id }) => ({
         country,
         birth: Number(birth),
+        death: Number(death),
         code,
         region,
         id
@@ -79,16 +87,44 @@ const enhance = compose(
     }
   }),
   branch(({ data }) => !data, renderComponent(() => "Generating chart...")),
-  withProps(
-    ({ data, margin, parentWidth }) =>
-      console.log(parentWidth) || {
-        beeswarmData: data.map(country => ({ x: country.birth, ...country })),
-        xScale: scaleLinear()
-          .domain([0, Math.ceil(max(data, d => d.birth))])
-          .range([0, parentWidth - margin.left - margin.right]),
-        maxBirthItem: data[scan(data, (a, b) => b.birth - a.birth)],
-        minBirthItem: data[scan(data, (a, b) => a.birth - b.birth)]
+  withStateHandlers(
+    ({ data, margin, parentWidth }) => ({
+      margin,
+      parentWidth,
+      beeswarmData: data.map(country => ({ ...country, x: country.birth })),
+      data,
+      maxItem: data[scan(data, (a, b) => b.birth - a.birth)],
+      minItem: data[scan(data, (a, b) => a.birth - b.birth)],
+      buttonText: "show death rate",
+      xScale: scaleLinear()
+        .domain([0, Math.ceil(data[scan(data, (a, b) => b.birth - a.birth)].birth)])
+        .range([0, parentWidth - 2 * margin.left])
+    }),
+    {
+      toggleHandler: ({ data, beeswarmData, buttonText, parentWidth, margin }) => () => {
+        return {
+          beeswarmData: data.map(country => ({
+            ...country,
+            x: buttonText === "show death rate" ? country.death : country.birth
+          })),
+          buttonText: buttonText === "show death rate" ? "show birth rate" : "show death rate",
+          maxItem:
+            data[scan(data, (a, b) => (buttonText === "show death rate" ? b.death - a.death : b.birth - a.birth))],
+          minItem:
+            data[scan(data, (a, b) => (buttonText === "show death rate" ? a.death - b.death : a.birth - b.birth))],
+          xScale: scaleLinear()
+            .domain([
+              0,
+              Math.ceil(
+                buttonText === "show death rate"
+                  ? data[scan(data, (a, b) => b.death - a.death)].death
+                  : data[scan(data, (a, b) => b.birth - a.birth)].birth
+              )
+            ])
+            .range([0, parentWidth - margin.right - margin.left])
+        }
       }
+    }
   )
 )
 export default enhance(BeeswarmChart)
