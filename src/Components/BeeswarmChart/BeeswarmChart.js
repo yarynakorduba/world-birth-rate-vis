@@ -7,7 +7,6 @@ import { colorScale } from "../../helpers/scales"
 import "./BeeswarmChart.scss"
 import Legend from "../Legend"
 import Markers from "./Markers"
-import HorizontalReferenceLine from "@data-ui/xy-chart/esm/annotation/HorizontalReferenceLine"
 
 const BeeswarmChart = ({
   data,
@@ -24,7 +23,7 @@ const BeeswarmChart = ({
 }) => (
   <div className={"BeeswarmChart"}>
     <h2 className="BeeswarmChart__header">
-      Birth rate per 1000 persons for 2013{" "}
+        {buttonText === "show death rate" ? "Birth" : "Death"} rate per 1000 persons for 2017
       <button className={"BeeswarmChart__button"} onClick={toggleHandler}>
         {buttonText}
       </button>
@@ -36,12 +35,10 @@ const BeeswarmChart = ({
       margin={margin}
       xScale={{
         type: "linear",
-        range: [0, width - margin.left - margin.right],
         domain: [0, Math.ceil(buttonText === "show death rate" ? maxItem.birth : maxItem.death)]
       }}
       yScale={{
-        type: "linear",
-        domain: [0, Math.ceil(buttonText === "show death rate" ? maxItem.birth : maxItem.death)]
+        type: "linear"
       }}
       renderTooltip={({ event, data, datum }) => (
         <div>
@@ -60,7 +57,7 @@ const BeeswarmChart = ({
       <CirclePackSeries
         data={beeswarmData}
         fill={dataItem => colorScale(dataItem.region)}
-        size={dataItem => xSizeScale(dataItem.x)}
+        size={dataItem => 5}
       />
       <CrossHair
         data={beeswarmData}
@@ -88,11 +85,10 @@ const enhance = compose(
   withState("data", "setData"),
   withProps(async ({ data, setData }) => {
     if (!data) {
-      const data = await csv("birth_rate.csv", ({ country, birth, death, code, region, id }) => ({
+      const data = await csv("birth_rate_data.csv", ({ country, birth, death, region, id }) => ({
         country,
         birth: Number(birth),
         death: Number(death),
-        code,
         region,
         id
       }))
@@ -104,7 +100,7 @@ const enhance = compose(
     ({ data, margin, parentWidth }) => ({
       margin,
       parentWidth,
-      beeswarmData: data.map(country => ({ ...country, x: country.birth })),
+      beeswarmData: data.map(country => ({ ...country, x: country.birth, y: 0 })),
       data,
       maxItem: data[scan(data, (a, b) => b.birth - a.birth)],
       minItem: data[scan(data, (a, b) => a.birth - b.birth)],
@@ -147,7 +143,7 @@ const enhance = compose(
                   : data[scan(data, (a, b) => b.birth - a.birth)].birth
               )
             ])
-            .range([2, 14])
+            .range([2, 15])
         }
       }
     }
