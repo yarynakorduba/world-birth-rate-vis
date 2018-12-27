@@ -7,6 +7,7 @@ import { colorScale } from "../../helpers/scales"
 import "./BeeswarmChart.scss"
 import Legend from "../Legend"
 import Markers from "./Markers"
+import HorizontalReferenceLine from "@data-ui/xy-chart/esm/annotation/HorizontalReferenceLine"
 
 const BeeswarmChart = ({
   data,
@@ -15,6 +16,7 @@ const BeeswarmChart = ({
   parentWidth: width,
   parentHeight: height,
   xScale,
+  xSizeScale,
   maxItem,
   minItem,
   toggleHandler,
@@ -22,7 +24,10 @@ const BeeswarmChart = ({
 }) => (
   <div className={"BeeswarmChart"}>
     <h2 className="BeeswarmChart__header">
-      Birth rate per 1000 persons for 2013 <button className={"BeeswarmChart__button"} onClick={toggleHandler}>{buttonText}</button>
+      Birth rate per 1000 persons for 2013{" "}
+      <button className={"BeeswarmChart__button"} onClick={toggleHandler}>
+        {buttonText}
+      </button>
     </h2>
     <XYChart
       ariaLabel="Beeswarm chart showing the birth rate for different countries for the year 2013"
@@ -31,9 +36,13 @@ const BeeswarmChart = ({
       margin={margin}
       xScale={{
         type: "linear",
+        range: [0, width - margin.left - margin.right],
         domain: [0, Math.ceil(buttonText === "show death rate" ? maxItem.birth : maxItem.death)]
       }}
-      yScale={{ type: "linear" }}
+      yScale={{
+        type: "linear",
+        domain: [0, Math.ceil(buttonText === "show death rate" ? maxItem.birth : maxItem.death)]
+      }}
       renderTooltip={({ event, data, datum }) => (
         <div>
           <div>{datum.country}</div>
@@ -48,7 +57,11 @@ const BeeswarmChart = ({
         maxItem={maxItem}
         yMax={height - margin.bottom - margin.top}
       />
-      <CirclePackSeries data={beeswarmData} fill={dataItem => colorScale(dataItem.region)} size={dataItem => 5} />
+      <CirclePackSeries
+        data={beeswarmData}
+        fill={dataItem => colorScale(dataItem.region)}
+        size={dataItem => xSizeScale(dataItem.x)}
+      />
       <CrossHair
         data={beeswarmData}
         showHorizontalLine={false}
@@ -69,7 +82,7 @@ const BeeswarmChart = ({
 
 const enhance = compose(
   defaultProps({
-    margin: { top: 60, right: 120, bottom: 200, left: 120 }
+    margin: { top: 120, right: 120, bottom: 150, left: 120 }
   }),
   withParentSize,
   withState("data", "setData"),
@@ -98,7 +111,10 @@ const enhance = compose(
       buttonText: "show death rate",
       xScale: scaleLinear()
         .domain([0, Math.ceil(data[scan(data, (a, b) => b.birth - a.birth)].birth)])
-        .range([0, parentWidth - 2 * margin.left])
+        .range([0, parentWidth - 2 * margin.left]),
+      xSizeScale: scaleLinear()
+        .domain([0, Math.ceil(data[scan(data, (a, b) => b.birth - a.birth)].birth)])
+        .range([2, 15])
     }),
     {
       toggleHandler: ({ data, beeswarmData, buttonText, parentWidth, margin }) => () => {
@@ -121,7 +137,17 @@ const enhance = compose(
                   : data[scan(data, (a, b) => b.birth - a.birth)].birth
               )
             ])
-            .range([0, parentWidth - margin.right - margin.left])
+            .range([0, parentWidth - margin.right - margin.left]),
+          xSizeScale: scaleLinear()
+            .domain([
+              0,
+              Math.ceil(
+                buttonText === "show death rate"
+                  ? data[scan(data, (a, b) => b.death - a.death)].death
+                  : data[scan(data, (a, b) => b.birth - a.birth)].birth
+              )
+            ])
+            .range([2, 14])
         }
       }
     }
