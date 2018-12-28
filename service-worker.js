@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/world-birth-rate-vis/precache-manifest.15e0996b8f336afe0bacfb7c01fe43a8.js"
+  "/world-birth-rate-vis/precache-manifest.5cafdaccb4d986e49804a3e83fa1866d.js"
 );
 
 workbox.clientsClaim();
