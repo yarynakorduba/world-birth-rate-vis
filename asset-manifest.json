@@ -1,13 +1,13 @@
 {
   "main.css": "/world-birth-rate-vis/static/css/main.22806ff5.chunk.css",
-  "main.js": "/world-birth-rate-vis/static/js/main.585b0c50.chunk.js",
-  "main.js.map": "/world-birth-rate-vis/static/js/main.585b0c50.chunk.js.map",
-  "static/js/1.be70350b.chunk.js": "/world-birth-rate-vis/static/js/1.be70350b.chunk.js",
-  "static/js/1.be70350b.chunk.js.map": "/world-birth-rate-vis/static/js/1.be70350b.chunk.js.map",
+  "main.js": "/world-birth-rate-vis/static/js/main.1bd5029c.chunk.js",
+  "main.js.map": "/world-birth-rate-vis/static/js/main.1bd5029c.chunk.js.map",
+  "static/js/1.27fc2735.chunk.js": "/world-birth-rate-vis/static/js/1.27fc2735.chunk.js",
+  "static/js/1.27fc2735.chunk.js.map": "/world-birth-rate-vis/static/js/1.27fc2735.chunk.js.map",
   "runtime~main.js": "/world-birth-rate-vis/static/js/runtime~main.491666ce.js",
   "runtime~main.js.map": "/world-birth-rate-vis/static/js/runtime~main.491666ce.js.map",
   "static/css/main.22806ff5.chunk.css.map": "/world-birth-rate-vis/static/css/main.22806ff5.chunk.css.map",
   "index.html": "/world-birth-rate-vis/index.html",
-  "precache-manifest.d8069fa3d937be68095e53d2aa2ff750.js": "/world-birth-rate-vis/precache-manifest.d8069fa3d937be68095e53d2aa2ff750.js",
+  "precache-manifest.15e0996b8f336afe0bacfb7c01fe43a8.js": "/world-birth-rate-vis/precache-manifest.15e0996b8f336afe0bacfb7c01fe43a8.js",
   "service-worker.js": "/world-birth-rate-vis/service-worker.js"
 }
