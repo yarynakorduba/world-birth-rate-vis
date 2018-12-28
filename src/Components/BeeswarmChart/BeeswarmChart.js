@@ -28,6 +28,8 @@ const BeeswarmChart = ({
         {buttonText}
       </button>
     </h2>
+    <Legend />
+
     <XYChart
       ariaLabel="Beeswarm chart showing the birth rate for different countries for the year 2013"
       width={width}
@@ -44,7 +46,8 @@ const BeeswarmChart = ({
       renderTooltip={({ event, data, datum }) => (
         <div>
           <div>{datum.country}</div>
-          <div>{buttonText === "show birth rate" ? datum.death : datum.birth}</div>
+          <div>{buttonText === "show birth rate" ? "Birth rate: " + datum.death : "Death rate: " + datum.birth}</div>
+          <div>GDP per capita: {datum.GDP}</div>
         </div>
       )}
     >
@@ -74,30 +77,23 @@ const BeeswarmChart = ({
       />
       <XAxis data={beeswarmData} label="Birth rate" numTicks={20} />
     </XYChart>
-    <Legend />
   </div>
 )
 
 const enhance = compose(
   defaultProps({
-    margin: { top: 100, right: 120, bottom: 150, left: 120 }
+    margin: { top: 20, right: 120, bottom: 150, left: 120 }
   }),
   withParentSize,
   withState("data", "setData"),
   withProps(async ({ data, setData }) => {
     if (!data) {
-      const data = await csv(
-        "birth_rate_data.csv",
-        ({ country, birth, death, region, id, GDP }) =>
-          console.log(Number(GDP)) || {
-            country,
-            birth: Number(birth),
-            death: Number(death),
-            GDP: Number(GDP),
-            region,
-            id
-          }
-      )
+      const data = await csv("birth_rate_data.csv", ({ birth, death, GDP, ...rest }) => ({
+        birth: Number(birth),
+        death: Number(death),
+        GDP: Number(GDP),
+        ...rest
+      }))
       setData(data)
     }
   }),
@@ -145,7 +141,7 @@ const enhance = compose(
   withProps(({ data }) => ({
     xSizeScale: scaleLinear()
       .domain([0, max(data, d => d.GDP)])
-      .range([3, 15])
+      .range([3, 16])
   }))
 )
 export default enhance(BeeswarmChart)

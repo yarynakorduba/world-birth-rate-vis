@@ -1,6 +1,23 @@
 .Legend {
   display: block;
-  margin-top: -120px;
   margin-left: 120px;
+  margin-bottom: 0;
 }
 
+.vx-legend{
+  flex-direction: row !important;
+}
+
+.vx-legend-item {
+  width: fit-content;
+}
+
+.vx-legend-shape {
+  display: flex;
+  width: fit-content;
+}
+
+.vx-legend-label {
+  all: unset;
+  flex: 1 1 0%;
+}
