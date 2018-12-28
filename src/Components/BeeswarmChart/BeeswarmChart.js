@@ -1,6 +1,6 @@
 import React from "react"
 import { withParentSize } from "@vx/vx"
-import { csv, scaleLinear, scan } from "d3"
+import { csv, scaleLinear, scan, max } from "d3"
 import { CirclePackSeries, XYChart, XAxis, CrossHair } from "@data-ui/xy-chart"
 import { compose, defaultProps, withProps, branch, renderComponent, withState, withStateHandlers } from "recompose"
 import { colorScale } from "../../helpers/scales"
@@ -23,7 +23,7 @@ const BeeswarmChart = ({
 }) => (
   <div className={"BeeswarmChart"}>
     <h2 className="BeeswarmChart__header">
-        {buttonText === "show death rate" ? "Birth" : "Death"} rate per 1000 persons for 2017
+      {buttonText === "show death rate" ? "Birth" : "Death"} rate per 1000 persons for 2017
       <button className={"BeeswarmChart__button"} onClick={toggleHandler}>
         {buttonText}
       </button>
@@ -38,7 +38,8 @@ const BeeswarmChart = ({
         domain: [0, Math.ceil(buttonText === "show death rate" ? maxItem.birth : maxItem.death)]
       }}
       yScale={{
-        type: "linear"
+        type: "linear",
+        range: [height - margin.top - margin.bottom, 0]
       }}
       renderTooltip={({ event, data, datum }) => (
         <div>
@@ -57,7 +58,7 @@ const BeeswarmChart = ({
       <CirclePackSeries
         data={beeswarmData}
         fill={dataItem => colorScale(dataItem.region)}
-        size={dataItem => 5}
+        size={dataItem => console.log(dataItem.GDP) || xSizeScale(dataItem.GDP)}
       />
       <CrossHair
         data={beeswarmData}
@@ -79,23 +80,29 @@ const BeeswarmChart = ({
 
 const enhance = compose(
   defaultProps({
-    margin: { top: 120, right: 120, bottom: 150, left: 120 }
+    margin: { top: 100, right: 120, bottom: 150, left: 120 }
   }),
   withParentSize,
   withState("data", "setData"),
   withProps(async ({ data, setData }) => {
     if (!data) {
-      const data = await csv("birth_rate_data.csv", ({ country, birth, death, region, id }) => ({
-        country,
-        birth: Number(birth),
-        death: Number(death),
-        region,
-        id
-      }))
+      const data = await csv(
+        "birth_rate_data.csv",
+        ({ country, birth, death, region, id, GDP }) =>
+          console.log(Number(GDP)) || {
+            country,
+            birth: Number(birth),
+            death: Number(death),
+            GDP: Number(GDP),
+            region,
+            id
+          }
+      )
       setData(data)
     }
   }),
   branch(({ data }) => !data, renderComponent(() => "Generating chart...")),
+
   withStateHandlers(
     ({ data, margin, parentWidth }) => ({
       margin,
@@ -107,10 +114,7 @@ const enhance = compose(
       buttonText: "show death rate",
       xScale: scaleLinear()
         .domain([0, Math.ceil(data[scan(data, (a, b) => b.birth - a.birth)].birth)])
-        .range([0, parentWidth - 2 * margin.left]),
-      xSizeScale: scaleLinear()
-        .domain([0, Math.ceil(data[scan(data, (a, b) => b.birth - a.birth)].birth)])
-        .range([2, 15])
+        .range([0, parentWidth - 2 * margin.left])
     }),
     {
       toggleHandler: ({ data, beeswarmData, buttonText, parentWidth, margin }) => () => {
@@ -133,20 +137,15 @@ const enhance = compose(
                   : data[scan(data, (a, b) => b.birth - a.birth)].birth
               )
             ])
-            .range([0, parentWidth - margin.right - margin.left]),
-          xSizeScale: scaleLinear()
-            .domain([
-              0,
-              Math.ceil(
-                buttonText === "show death rate"
-                  ? data[scan(data, (a, b) => b.death - a.death)].death
-                  : data[scan(data, (a, b) => b.birth - a.birth)].birth
-              )
-            ])
-            .range([2, 15])
+            .range([0, parentWidth - margin.right - margin.left])
         }
       }
     }
-  )
+  ),
+  withProps(({ data }) => ({
+    xSizeScale: scaleLinear()
+      .domain([0, max(data, d => d.GDP)])
+      .range([3, 15])
+  }))
 )
 export default enhance(BeeswarmChart)

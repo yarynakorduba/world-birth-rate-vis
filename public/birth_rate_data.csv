@@ -1,226 +1,226 @@
-id,country,birth,region,death
-12,Afghanistan                                        ,37.9,Asia,13.4
-149,Albania                                            ,13.2,Europe,6.8
-69,Algeria                                            ,22.2,Africa,4.3
-82,American Samoa                                     ,19.6,America,5.9
-224,Andorra                                            ,7.5,Europe,7.3
-1,Angola                                             ,44.19,Africa,9.2
-157,Anguilla                                           ,12.5,America,4.6
-118,Antigua and Barbuda                                ,15.7,America,5.7
-110,Argentina                                          ,16.7,America,7.5
-154,Armenia                                            ,12.9,Asia,9.4
-159,Aruba                                              ,12.4,America,8.4
-165,Australia                                          ,12.1,Oceania,7.3
-201,Austria                                            ,9.5,Europe,9.6
-116,Azerbaijan                                         ,15.8,Asia,7.1
-125,"Bahamas, The                                       ",15.3,America,7.2
-145,Bahrain                                            ,13.3,Asia,2.8
-89,Bangladesh                                         ,18.8,Asia,5.4
-169,Barbados                                           ,11.7,America,8.6
-191,Belarus                                            ,10.3,Europe,13.2
-175,Belgium                                            ,11.3,Europe,9.7
-53,Belize                                             ,24,America,6
-21,Benin                                              ,35,Africa,7.9
-173,Bermuda                                            ,11.3,America,8.6
-107,Bhutan                                             ,17.3,Asia,6.5
-73,Bolivia                                            ,22,America,6.4
-211,Bosnia and Herzegovina                             ,8.8,Europe,10
-71,Botswana                                           ,22.1,Africa,9.6
-136,Brazil                                             ,14.1,America,6.7
-177,British Virgin Islands                             ,11.1,America,5.1
-108,Brunei                                             ,17,Asia,3.6
-212,Bulgaria                                           ,8.7,Europe,14.5
-7,Burkina Faso                                       ,41.2,Africa,11.2
-97,Burma                                              ,18.1,Asia,7.4
-6,Burundi                                            ,41.3,Africa,8.8
-79,Cabo Verde                                         ,20,Africa,6
-67,Cambodia                                           ,23,Asia,7.5
-19,Cameroon                                           ,35.4,Africa,9.6
-190,Canada                                             ,10.3,America,8.7
-168,Cayman Islands                                     ,12,America,5.8
-23,Central African Republic                           ,34.3,Africa,13.2
-17,Chad                                               ,35.6,Africa,13.8
-143,Chile                                              ,13.6,America,6.2
-161,China                                              ,12.3,Asia,7.8
-114,Colombia                                           ,16.1,America,5.5
-48,Comoros                                            ,26.1,Africa,7.2
-26,"Congo, Democratic Republic of the                  ",33.5,Africa,9.6
-22,"Congo, Republic of the                             ",34.4,Africa,9.5
-138,Cook Islands                                       ,14,Oceania,8.4
-120,Costa Rica                                         ,15.5,America,4.7
-45,Cote d'Ivoire                                      ,27.7,Africa,9.4
-210,Croatia                                            ,8.9,Europe,12.2
-184,Cuba                                               ,10.7,America,8.7
-140,Curacao                                            ,13.7,America,8.4
-176,Cyprus                                             ,11.3,Europe,6.8
-203,Czechia                                            ,9.3,Europe,10.5
-186,Denmark                                            ,10.5,Europe,10.3
-64,Djibouti                                           ,23.4,Africa,7.5
-127,Dominica                                           ,15.1,America,7.9
-92,Dominican Republic                                 ,18.4,America,4.7
-102,Ecuador                                            ,17.9,America,5.1
-40,Egypt                                              ,29.6,Africa,4.6
-112,El Salvador                                        ,16.2,America,5.8
-32,Equatorial Guinea                                  ,32.2,Africa,7.8
-39,Eritrea                                            ,29.6,Africa,7.2
-193,Estonia                                            ,10.1,Europe,12.6
-14,Ethiopia                                           ,36.5,Africa,7.7
-181,Falkland Islands (Islas Malvinas)                  ,10.9,America,4.9
-134,Faroe Islands                                      ,14.3,Europe,8.8
-91,Fiji                                               ,18.6,Oceania,6.1
-185,Finland                                            ,10.7,Europe,10
-163,France                                             ,12.2,Europe,9.3
-131,French Polynesia                                   ,14.8,Oceania,5.2
-24,Gabon                                              ,34.2,Africa,13
-41,"Gambia, The                                        ",29.4,Africa,7
-34,Gaza Strip                                         ,31.4,Africa,3.1
-162,Georgia                                            ,12.3,Europe,10.9
-213,Germany                                            ,8.6,Europe,11.7
-36,Ghana                                              ,30.5,Africa,7
-139,Gibraltar                                          ,14,Europe,8.5
-218,Greece                                             ,8.4,Europe,11.3
-133,Greenland                                          ,14.4,America,8.7
-121,Grenada                                            ,15.5,America,8.2
-81,Guam                                               ,19.7,Oceania,6
-52,Guatemala                                          ,24.1,America,4.7
-196,Guernsey                                           ,9.8,Europe,9
-20,Guinea                                             ,35.1,Africa,9
-30,Guinea-Bissau                                      ,32.5,Africa,13.9
-123,Guyana                                             ,15.4,America,7.4
-66,Haiti                                              ,23,America,7.6
-68,Honduras                                           ,22.4,America,5.3
-208,Hong Kong                                          ,8.9,Asia,7.4
-205,Hungary                                            ,9,Europe,12.8
-141,Iceland                                            ,13.7,Europe,6.4
-87,India                                              ,19,Asia,7.3
-113,Indonesia                                          ,16.2,Asia,6.5
-101,Iran                                               ,17.9,Asia,5.3
-37,Iraq                                               ,30.4,Asia,3.8
-137,Ireland                                            ,14.1,Europe,6.6
-180,Isle of Man                                        ,11,Europe,10.2
-96,Israel                                             ,18.1,Asia,5.2
-215,Italy                                              ,8.6,Europe,10.4
-99,Jamaica                                            ,17.9,America,6.8
-223,Japan                                              ,7.7,Asia,9.8
-160,Jersey                                             ,12.4,Europe,7.8
-58,Jordan                                             ,23.9,Asia,3.4
-98,Kazakhstan                                         ,18.1,Asia,8.1
-59,Kenya                                              ,23.9,Africa,6.7
-76,Kiribati                                           ,21.2,Oceania,7
-132,"Korea, North                                       ",14.6,Asia,9.3
-220,"Korea, South                                       ",8.3,Asia,6
-84,Kuwait                                             ,19.2,Asia,2.2
-72,Kyrgyzstan                                         ,22.1,Asia,6.5
-63,Laos                                               ,23.6,Asia,7.4
-198,Latvia                                             ,9.7,Europe,14.5
-135,Lebanon                                            ,14.3,Asia,5
-50,Lesotho                                            ,24.6,Africa,15
-10,Liberia                                            ,38.3,Africa,7.6
-106,Libya                                              ,17.5,Africa,3.6
-188,Liechtenstein                                      ,10.4,Europe,7.4
-195,Lithuania                                          ,9.9,Europe,14.6
-170,Luxembourg                                         ,11.5,Europe,7.3
-216,Macau                                              ,8.6,Asia,4.5
-172,Macedonia                                          ,11.4,Europe,9.2
-33,Madagascar                                         ,31.6,Africa,6.5
-8,Malawi                                             ,41,Africa,7.9
-85,Malaysia                                           ,19.1,Asia,5.1
-115,Maldives                                           ,16.1,Asia,4
-3,Mali                                               ,43.9,Africa,9.8
-192,Malta                                              ,10.1,Europe,9.4
-51,Marshall Islands                                   ,24.4,Oceania,4.2
-38,Mauritania                                         ,30.4,Africa,7.9
-153,Mauritius                                          ,13,Africa,7.1
-94,Mexico                                             ,18.3,America,5.3
-80,"Micronesia, Federated States of                    ",20,Oceania,4.2
-171,Moldova                                            ,11.5,Europe,12.6
-226,Monaco                                             ,6.6,Europe,9.8
-88,Mongolia                                           ,18.9,Europe,6.3
-194,Montenegro                                         ,10,Europe,9.7
-183,Montserrat                                         ,10.8,America,6.2
-105,Morocco                                            ,17.7,Africa,4.9
-11,Mozambique                                         ,38.1,Africa,11.6
-46,Namibia                                            ,27.3,Africa,7.9
-56,Nauru                                              ,24,Oceania,5.9
-83,Nepal                                              ,19.5,Africa,5.6
-182,Netherlands                                        ,10.9,Europe,8.9
-129,New Caledonia                                      ,15,Oceania,5.7
-150,New Zealand                                        ,13.2,Oceania,7.5
-104,Nicaragua                                          ,17.7,Africa,5.1
-13,Nigeria                                            ,36.9,Africa,12.4
-130,Northern Mariana Islands                           ,15,Oceania,4.8
-164,Norway                                             ,12.2,Europe,8.1
-54,Oman                                               ,24,Asia,3.3
-74,Pakistan                                           ,21.9,Asia,6.3
-174,Palau                                              ,11.3,Oceania,8.1
-100,Panama                                             ,17.9,America,4.9
-60,Papua New Guinea                                   ,23.7,Oceania,6.6
-111,Paraguay                                           ,16.6,America,4.8
-103,Peru                                               ,17.8,America,6.1
-61,Philippines                                        ,23.7,Asia,6.1
-202,Poland                                             ,9.5,Europe,10.4
-207,Portugal                                           ,9,Europe,11.1
-222,Puerto Rico                                        ,8.1,America,8.6
-199,Qatar                                              ,9.6,Asia,1.5
-209,Romania                                            ,8.9,Europe,12
-178,Russia                                             ,11,Asia,13.5
-35,Rwanda                                             ,30.7,Africa,6.4
-200,"Saint Helena, Ascension, and Tristan da Cunha      ",9.6,Africa,7.8
-147,Saint Kitts and Nevis                              ,13.2,America,7.1
-144,Saint Lucia                                        ,13.3,America,7.7
-225,Saint Pierre and Miquelon                          ,7.1,America,9.9
-146,Saint Vincent and the Grenadines                   ,13.2,America,7.3
-77,Samoa                                              ,20.4,Oceania,5.3
-217,San Marino                                         ,8.6,Europe,8.7
-31,Sao Tome and Principe                              ,32.4,Africa,6.8
-93,Saudi Arabia                                       ,18.3,Asia,3.4
-28,Senegal                                            ,33.4,Africa,8.1
-206,Serbia                                             ,9,Europe,13.6
-142,Seychelles                                         ,13.7,Africa,7
-15,Sierra Leone                                       ,36.3,Africa,10.4
-214,Singapore                                          ,8.6,Asia,3.5
-151,Sint Maarten                                       ,13.1,America,5.2
-197,Slovakia                                           ,9.7,Europe,9.9
-221,Slovenia                                           ,8.2,Europe,11.6
-49,Solomon Islands                                    ,24.9,Oceania,3.8
-9,Somalia                                            ,39.6,Africa,13.1
-78,South Africa                                       ,20.2,Africa,9.4
-18,South Sudan                                        ,35.5,Africa,7.7
-204,Spain                                              ,9.2,Europe,9.1
-126,Sri Lanka                                          ,15.2,Asia,6.2
-44,Sudan                                              ,27.9,Africa,7.3
-117,Suriname                                           ,15.8,America,6.1
-55,Swaziland                                          ,24,Africa,13.2
-167,Sweden                                             ,12.1,Europe,9.4
-187,Switzerland                                        ,10.5,Europe,8.3
-75,Syria                                              ,21.2,Asia,4
-219,Taiwan                                             ,8.3,Asia,7.4
-65,Tajikistan                                         ,23.3,Asia,6
-16,Tanzania                                           ,35.6,Africa,7.6
-179,Thailand                                           ,11,Asia,8
-27,Timor-Leste                                        ,33.4,Asia,5.9
-29,Togo                                               ,33.3,Africa,6.9
-70,Tonga                                              ,22.2,Africa,4.9
-156,Trinidad and Tobago                                ,12.7,Africa,8.8
-95,Tunisia                                            ,18.2,Africa,6.3
-119,Turkey                                             ,15.7,Asia,6
-86,Turkmenistan                                       ,19.1,Asia,6.1
-124,Turks and Caicos Islands                           ,15.3,America,3.2
-62,Tuvalu                                             ,23.7,Oceania,8.5
-4,Uganda                                             ,42.9,Africa,10.2
-189,Ukraine                                            ,10.3,Europe,14.4
-128,United Arab Emirates                               ,15.1,Africa,1.9
-166,United Kingdom                                     ,12.1,Europe,9.4
-158,United States                                      ,12.5,America,8.2
-152,Uruguay                                            ,13,America,9.4
-109,Uzbekistan                                         ,16.8,Asia,5.3
-57,Vanuatu                                            ,24,Oceania,4
-90,Venezuela                                          ,18.8,America,5.3
-122,Vietnam                                            ,15.5,Asia,5.9
-155,Virgin Islands                                     ,12.8,America,7.8
-148,Wallis and Futuna                                  ,13.2,Oceania,5.4
-47,West Bank                                          ,26.3,Asia,3.5
-42,Western Sahara                                     ,29.3,Africa,8.1
-43,Yemen                                              ,28.4,Asia,6
-5,Zambia                                             ,41.5,Africa,12.2
-25,Zimbabwe                                           ,34.2,Africa,10.2
+id,country,birth,region,death,GDP,yearGDP
+12,Afghanistan                                        ,37.9,Asia,13.4,2000.00,2017
+149,Albania                                            ,13.2,Europe,6.8,12500.00,2017
+69,Algeria                                            ,22.2,Africa,4.3,15200.00,2017
+82,American Samoa                                     ,19.6,America,5.9,11200.00,2016
+224,Andorra                                            ,7.5,Europe,7.3,49900.00,2015
+1,Angola                                             ,44.19,Africa,9.2,6800.00,2017
+157,Anguilla                                           ,12.5,America,4.6,12200.00,2008
+118,Antigua and Barbuda                                ,15.7,America,5.7,26400.00,2017
+110,Argentina                                          ,16.7,America,7.5,20900.00,2017
+154,Armenia                                            ,12.9,Asia,9.4,9500.00,2017
+159,Aruba                                              ,12.4,America,8.4,37500.00,2017
+165,Australia                                          ,12.1,Oceania,7.3,50400.00,2017
+201,Austria                                            ,9.5,Europe,9.6,50000.00,2017
+116,Azerbaijan                                         ,15.8,Asia,7.1,17500.00,2017
+125,"Bahamas, The                                       ",15.3,America,7.2,32400.00,2017
+145,Bahrain                                            ,13.3,Asia,2.8,49000.00,2017
+89,Bangladesh                                         ,18.8,Asia,5.4,4200.00,2017
+169,Barbados                                           ,11.7,America,8.6,18600.00,2017
+191,Belarus                                            ,10.3,Europe,13.2,18900.00,2017
+175,Belgium                                            ,11.3,Europe,9.7,46600.00,2017
+53,Belize                                             ,24,America,6,8300.00,2017
+21,Benin                                              ,35,Africa,7.9,2300.00,2017
+173,Bermuda                                            ,11.3,America,8.6,99400.00,2016
+107,Bhutan                                             ,17.3,Asia,6.5,9000.00,2017
+73,Bolivia                                            ,22,America,6.4,7600.00,2017
+211,Bosnia and Herzegovina                             ,8.8,Europe,10,12800.00,2017
+71,Botswana                                           ,22.1,Africa,9.6,17000.00,2017
+136,Brazil                                             ,14.1,America,6.7,15600.00,2017
+177,British Virgin Islands                             ,11.1,America,5.1,34200.00,2017
+108,Brunei                                             ,17,Asia,3.6,78900.00,2017
+212,Bulgaria                                           ,8.7,Europe,14.5,21800.00,2017
+7,Burkina Faso                                       ,41.2,Africa,11.2,1900.00,2017
+97,Burma                                              ,18.1,Asia,7.4,6300.00,2017
+6,Burundi                                            ,41.3,Africa,8.8,700.00,2017
+79,Cabo Verde                                         ,20,Africa,6,7000.00,2017
+67,Cambodia                                           ,23,Asia,7.5,4000.00,2017
+19,Cameroon                                           ,35.4,Africa,9.6,3700.00,2017
+190,Canada                                             ,10.3,America,8.7,48400.00,2017
+168,Cayman Islands                                     ,12,America,5.8,43800.00,2004
+23,Central African Republic                           ,34.3,Africa,13.2,700.00,2017
+17,Chad                                               ,35.6,Africa,13.8,2300.00,2017
+143,Chile                                              ,13.6,America,6.2,24600.00,2017
+161,China                                              ,12.3,Asia,7.8,16700.00,2017
+114,Colombia                                           ,16.1,America,5.5,14400.00,2017
+48,Comoros                                            ,26.1,Africa,7.2,1600.00,2017
+26,"Congo, Democratic Republic of the                  ",33.5,Africa,9.6,800.00,2017
+22,"Congo, Republic of the                             ",34.4,Africa,9.5,6800.00,2017
+138,Cook Islands                                       ,14,Oceania,8.4,16700.00,2016
+120,Costa Rica                                         ,15.5,America,4.7,16900.00,2017
+45,Cote d'Ivoire                                      ,27.7,Africa,9.4,3900.00,2017
+210,Croatia                                            ,8.9,Europe,12.2,24700.00,2017
+184,Cuba                                               ,10.7,America,8.7,12300.00,2016
+140,Curacao                                            ,13.7,America,8.4,15000.00,2004
+176,Cyprus                                             ,11.3,Europe,6.8,37200.00,2017
+203,Czechia                                            ,9.3,Europe,10.5,35500.00,2017
+186,Denmark                                            ,10.5,Europe,10.3,50100.00,2017
+64,Djibouti                                           ,23.4,Africa,7.5,3600.00,2017
+127,Dominica                                           ,15.1,America,7.9,11000.00,2017
+92,Dominican Republic                                 ,18.4,America,4.7,17000.00,2017
+102,Ecuador                                            ,17.9,America,5.1,11500.00,2017
+40,Egypt                                              ,29.6,Africa,4.6,12700.00,2017
+112,El Salvador                                        ,16.2,America,5.8,8000.00,2017
+32,Equatorial Guinea                                  ,32.2,Africa,7.8,37400.00,2017
+39,Eritrea                                            ,29.6,Africa,7.2,1600.00,2017
+193,Estonia                                            ,10.1,Europe,12.6,31700.00,2017
+14,Ethiopia                                           ,36.5,Africa,7.7,2200.00,2017
+181,Falkland Islands (Islas Malvinas)                  ,10.9,America,4.9,70800.00,2015
+134,Faroe Islands                                      ,14.3,Europe,8.8,40000.00,2014
+91,Fiji                                               ,18.6,Oceania,6.1,9800.00,2017
+185,Finland                                            ,10.7,Europe,10,44500.00,2017
+163,France                                             ,12.2,Europe,9.3,44100.00,2017
+131,French Polynesia                                   ,14.8,Oceania,5.2,17000.00,2015
+24,Gabon                                              ,34.2,Africa,13,18100.00,2017
+41,"Gambia, The                                        ",29.4,Africa,7,2600.00,2017
+34,Gaza Strip                                         ,31.4,Africa,3.1,4300.00,2014
+162,Georgia                                            ,12.3,Europe,10.9,10700.00,2017
+213,Germany                                            ,8.6,Europe,11.7,50800.00,2017
+36,Ghana                                              ,30.5,Africa,7,4700.00,2017
+139,Gibraltar                                          ,14,Europe,8.5,61700.00,2014
+218,Greece                                             ,8.4,Europe,11.3,27800.00,2017
+133,Greenland                                          ,14.4,America,8.7,41800.00,2015
+121,Grenada                                            ,15.5,America,8.2,15100.00,2017
+81,Guam                                               ,19.7,Oceania,6,35600.00,2016
+52,Guatemala                                          ,24.1,America,4.7,8200.00,2017
+196,Guernsey                                           ,9.8,Europe,9,52500.00,2014
+20,Guinea                                             ,35.1,Africa,9,2200.00,2017
+30,Guinea-Bissau                                      ,32.5,Africa,13.9,1900.00,2017
+123,Guyana                                             ,15.4,America,7.4,8100.00,2017
+66,Haiti                                              ,23,America,7.6,1800.00,2017
+68,Honduras                                           ,22.4,America,5.3,5600.00,2017
+208,Hong Kong                                          ,8.9,Asia,7.4,61500.00,2017
+205,Hungary                                            ,9,Europe,12.8,29600.00,2017
+141,Iceland                                            ,13.7,Europe,6.4,52200.00,2017
+87,India                                              ,19,Asia,7.3,7200.00,2017
+113,Indonesia                                          ,16.2,Asia,6.5,12400.00,2017
+101,Iran                                               ,17.9,Asia,5.3,20100.00,2017
+37,Iraq                                               ,30.4,Asia,3.8,16700.00,2017
+137,Ireland                                            ,14.1,Europe,6.6,73200.00,2017
+180,Isle of Man                                        ,11,Europe,10.2,84600.00,2014
+96,Israel                                             ,18.1,Asia,5.2,36400.00,2017
+215,Italy                                              ,8.6,Europe,10.4,38200.00,2017
+99,Jamaica                                            ,17.9,America,6.8,9200.00,2017
+223,Japan                                              ,7.7,Asia,9.8,42900.00,2017
+160,Jersey                                             ,12.4,Europe,7.8,56600.00,2016
+58,Jordan                                             ,23.9,Asia,3.4,9200.00,2017
+98,Kazakhstan                                         ,18.1,Asia,8.1,26300.00,2017
+59,Kenya                                              ,23.9,Africa,6.7,3500.00,2017
+76,Kiribati                                           ,21.2,Oceania,7,2000.00,2017
+132,"Korea, North                                       ",14.6,Asia,9.3,1700.00,2015
+220,"Korea, South                                       ",8.3,Asia,6,39500.00,2017
+84,Kuwait                                             ,19.2,Asia,2.2,65800.00,2017
+72,Kyrgyzstan                                         ,22.1,Asia,6.5,3700.00,2017
+63,Laos                                               ,23.6,Asia,7.4,7400.00,2017
+198,Latvia                                             ,9.7,Europe,14.5,27700.00,2017
+135,Lebanon                                            ,14.3,Asia,5,19600.00,2017
+50,Lesotho                                            ,24.6,Africa,15,3300.00,2017
+10,Liberia                                            ,38.3,Africa,7.6,1300.00,2017
+106,Libya                                              ,17.5,Africa,3.6,9600.00,2017
+188,Liechtenstein                                      ,10.4,Europe,7.4,139100.00,2009
+195,Lithuania                                          ,9.9,Europe,14.6,32400.00,2017
+170,Luxembourg                                         ,11.5,Europe,7.3,105100.00,2017
+216,Macau                                              ,8.6,Asia,4.5,110000.00,2017
+172,Macedonia                                          ,11.4,Europe,9.2,14900.00,2017
+33,Madagascar                                         ,31.6,Africa,6.5,1600.00,2017
+8,Malawi                                             ,41,Africa,7.9,1200.00,2017
+85,Malaysia                                           ,19.1,Asia,5.1,29100.00,2017
+115,Maldives                                           ,16.1,Asia,4,19200.00,2017
+3,Mali                                               ,43.9,Africa,9.8,2200.00,2017
+192,Malta                                              ,10.1,Europe,9.4,41900.00,2017
+51,Marshall Islands                                   ,24.4,Oceania,4.2,3600.00,2017
+38,Mauritania                                         ,30.4,Africa,7.9,4500.00,2017
+153,Mauritius                                          ,13,Africa,7.1,22300.00,2017
+94,Mexico                                             ,18.3,America,5.3,19900.00,2017
+80,"Micronesia, Federated States of                    ",20,Oceania,4.2,3400.00,2017
+171,Moldova                                            ,11.5,Europe,12.6,6700.00,2017
+226,Monaco                                             ,6.6,Europe,9.8,115700.00,2015
+88,Mongolia                                           ,18.9,Europe,6.3,13000.00,2017
+194,Montenegro                                         ,10,Europe,9.7,17800.00,2017
+183,Montserrat                                         ,10.8,America,6.2,34000.00,2011
+105,Morocco                                            ,17.7,Africa,4.9,8600.00,2017
+11,Mozambique                                         ,38.1,Africa,11.6,1300.00,2017
+46,Namibia                                            ,27.3,Africa,7.9,11200.00,2017
+56,Nauru                                              ,24,Oceania,5.9,12300.00,2017
+83,Nepal                                              ,19.5,Africa,5.6,2700.00,2017
+182,Netherlands                                        ,10.9,Europe,8.9,53900.00,2017
+129,New Caledonia                                      ,15,Oceania,5.7,31100.00,2015
+150,New Zealand                                        ,13.2,Oceania,7.5,39000.00,2017
+104,Nicaragua                                          ,17.7,Africa,5.1,5900.00,2017
+13,Nigeria                                            ,36.9,Africa,12.4,5900.00,2017
+130,Northern Mariana Islands                           ,15,Oceania,4.8,24500.00,2016
+164,Norway                                             ,12.2,Europe,8.1,72100.00,2017
+54,Oman                                               ,24,Asia,3.3,46000.00,2017
+74,Pakistan                                           ,21.9,Asia,6.3,5400.00,2017
+174,Palau                                              ,11.3,Oceania,8.1,14700.00,2017
+100,Panama                                             ,17.9,America,4.9,25400.00,2017
+60,Papua New Guinea                                   ,23.7,Oceania,6.6,3700.00,2017
+111,Paraguay                                           ,16.6,America,4.8,12800.00,2017
+103,Peru                                               ,17.8,America,6.1,13500.00,2017
+61,Philippines                                        ,23.7,Asia,6.1,8400.00,2017
+202,Poland                                             ,9.5,Europe,10.4,29600.00,2017
+207,Portugal                                           ,9,Europe,11.1,30500.00,2017
+222,Puerto Rico                                        ,8.1,America,8.6,39400.00,2017
+199,Qatar                                              ,9.6,Asia,1.5,124100.00,2017
+209,Romania                                            ,8.9,Europe,12,24600.00,2017
+178,Russia                                             ,11,Asia,13.5,27900.00,2017
+35,Rwanda                                             ,30.7,Africa,6.4,2100.00,2017
+200,"Saint Helena, Ascension, and Tristan da Cunha      ",9.6,Africa,7.8,7800.00,2017
+147,Saint Kitts and Nevis                              ,13.2,America,7.1,28200.00,2017
+144,Saint Lucia                                        ,13.3,America,7.7,14400.00,2017
+225,Saint Pierre and Miquelon                          ,7.1,America,9.9,46200.00,2006
+146,Saint Vincent and the Grenadines                   ,13.2,America,7.3,11500.00,2017
+77,Samoa                                              ,20.4,Oceania,5.3,5700.00,2017
+217,San Marino                                         ,8.6,Europe,8.7,59000.00,2017
+31,Sao Tome and Principe                              ,32.4,Africa,6.8,3200.00,2017
+93,Saudi Arabia                                       ,18.3,Asia,3.4,54500.00,2017
+28,Senegal                                            ,33.4,Africa,8.1,3500.00,2017
+206,Serbia                                             ,9,Europe,13.6,15100.00,2017
+142,Seychelles                                         ,13.7,Africa,7,29300.00,2017
+15,Sierra Leone                                       ,36.3,Africa,10.4,1600.00,2017
+214,Singapore                                          ,8.6,Asia,3.5,94100.00,2017
+151,Sint Maarten                                       ,13.1,America,5.2,66800.00,2014
+197,Slovakia                                           ,9.7,Europe,9.9,33100.00,2017
+221,Slovenia                                           ,8.2,Europe,11.6,34500.00,2017
+49,Solomon Islands                                    ,24.9,Oceania,3.8,2200.00,2017
+9,Somalia                                            ,39.6,Africa,13.1,499.82,2017
+78,South Africa                                       ,20.2,Africa,9.4,13600.00,2017
+18,South Sudan                                        ,35.5,Africa,7.7,1600.00,2017
+204,Spain                                              ,9.2,Europe,9.1,38400.00,2017
+126,Sri Lanka                                          ,15.2,Asia,6.2,12900.00,2017
+44,Sudan                                              ,27.9,Africa,7.3,4300.00,2017
+117,Suriname                                           ,15.8,America,6.1,14900.00,2017
+55,Swaziland                                          ,24,Africa,13.2,3224.00,2017
+167,Sweden                                             ,12.1,Europe,9.4,51200.00,2017
+187,Switzerland                                        ,10.5,Europe,8.3,62100.00,2017
+75,Syria                                              ,21.2,Asia,4,2900.00,2015
+219,Taiwan                                             ,8.3,Asia,7.4,50500.00,2017
+65,Tajikistan                                         ,23.3,Asia,6,3200.00,2017
+16,Tanzania                                           ,35.6,Africa,7.6,3200.00,2017
+179,Thailand                                           ,11,Asia,8,17900.00,2017
+27,Timor-Leste                                        ,33.4,Asia,5.9,6000.00,2017
+29,Togo                                               ,33.3,Africa,6.9,1700.00,2017
+70,Tonga                                              ,22.2,Africa,4.9,5900.00,2017
+156,Trinidad and Tobago                                ,12.7,Africa,8.8,31300.00,2017
+95,Tunisia                                            ,18.2,Africa,6.3,11900.00,2017
+119,Turkey                                             ,15.7,Asia,6,27000.00,2017
+86,Turkmenistan                                       ,19.1,Asia,6.1,18200.00,2017
+124,Turks and Caicos Islands                           ,15.3,America,3.2,29100.00,2007
+62,Tuvalu                                             ,23.7,Oceania,8.5,3800.00,2017
+4,Uganda                                             ,42.9,Africa,10.2,2400.00,2017
+189,Ukraine                                            ,10.3,Europe,14.4,8800.00,2017
+128,United Arab Emirates                               ,15.1,Africa,1.9,68600.00,2017
+166,United Kingdom                                     ,12.1,Europe,9.4,44300.00,2017
+158,United States                                      ,12.5,America,8.2,59800.00,2017
+152,Uruguay                                            ,13,America,9.4,22400.00,2017
+109,Uzbekistan                                         ,16.8,Asia,5.3,6900.00,2017
+57,Vanuatu                                            ,24,Oceania,4,2700.00,2017
+90,Venezuela                                          ,18.8,America,5.3,12500.00,2017
+122,Vietnam                                            ,15.5,Asia,5.9,6900.00,2017
+155,Virgin Islands                                     ,12.8,America,7.8,37000.00,2016
+148,Wallis and Futuna                                  ,13.2,Oceania,5.4,3800.00,2004
+47,West Bank                                          ,26.3,Asia,3.5,4300.00,2014
+42,Western Sahara                                     ,29.3,Africa,8.1,2500.00,2007
+43,Yemen                                              ,28.4,Asia,6,2500.00,2017
+5,Zambia                                             ,41.5,Africa,12.2,4000.00,2017
+25,Zimbabwe                                           ,34.2,Africa,10.2,2300.00,2017
